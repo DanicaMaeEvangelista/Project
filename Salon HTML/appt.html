@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head> 
+ <meta charset="utf-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <meta http-equiv="X-UA-Compatible" content="ie=edge">
+ <title>Book Appointment</title>
+ <link rel="stylesheet" href="appt.css">
+ <script type="appt.js"></script>
+</head>
+
+<body>
+<div class="header"> 
+  <div class="logo">
+    <a href="index.html"><img  src="bg.png" alt="KAP" width="80" height="90"></a>
+  </div>
+ <ul class="up">
+<li><a href="index.html" >Home</a></li>
+
+<li><a href="appt.html" class="active">Book Appointment</a></li>
+
+</ul>
+</div> 
+
+<br><br><br><br><br>
+
+</div>
+  <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form  class="login-form">
+                                <center><h2 class="main-heading">Appointment Form</h2></center>
+                                <input id="name" type="text"placeholder="Full name"/>
+                                <input id="email" type="email"placeholder="Email"/>  
+                                <input  id="date" type="date" placeholder="date">
+                                <input  id="time" type="time" placeholde ="time">
+                                <button onclick="names()" type='submit'class='submit-btn'>Get Appointment</button>
+                                
+                                
+                            </form> 
+<!--
+                            <form  class="register-form">
+                                <center><h2 class="main-heading">Appointment Form</h2></center>
+                                <input type="text" placeholder="User name"/>
+                                <input type="text" placeholder="Email"/>
+                                <input type="password" placeholder="Password"/>
+                            
+                                <button type='submit'class='submit-btn'>Get Appointment</button>
+                                
+                                <p class="message">Already had an Appointement?<a href="#"> Login</a>
+                                </p>
+                            </form>
+                        -->
+                         </div>
+                    </div>
+                </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'></script>
+    <script src="Salon_draft.js"></script>
+    <script src="appt.js"></script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");}); 
+    </script>
+
+<br>
+
+
+</body>
+</html>
